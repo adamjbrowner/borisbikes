@@ -29,3 +29,7 @@
 |---|---|
 | Person  |   |
 | Bike  | bike_is_working?  |
+
+Bike <-- available? --> true/false
+Bike <-- bike_is_working? --> true/false
+Docking Station <-- release_a_bike --> A bike
