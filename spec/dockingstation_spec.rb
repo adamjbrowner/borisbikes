@@ -20,12 +20,12 @@ describe DockingStation do
     describe "#release_bike" do
       #test that the released bike is a docked bike
       it "releases a docked bike" do
-        bike = double(:bike)
+        bike = Bike.new
         subject.dock_bike(bike)
         expect(subject.release_bike).to eq bike
       end
       it 'won\'t release a broken bike' do
-        bike = double(:bike)
+        bike = Bike.new
         bike.report_broken
         subject.dock_bike(bike)
         expect{subject.release_bike}.to raise_exception('There are no working bikes!')

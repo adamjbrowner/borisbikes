@@ -34,6 +34,5 @@ class DockingStation
   def empty?
     @bikes.empty?
   end
-  def ralksjda
 
 end
